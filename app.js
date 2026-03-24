@@ -256,9 +256,10 @@ function initNav() {
 }
 
 // ─── SCROLL REVEAL ─────────────────────────
+let revealObserver; // global so dynamic content can use it
 function initReveal() {
   const reveals = $$('.reveal');
-  const observer = new IntersectionObserver((entries) => {
+  revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
@@ -266,7 +267,7 @@ function initReveal() {
     });
   }, { threshold: 0.05, rootMargin: '50px 0px -10px 0px' });
 
-  reveals.forEach(el => observer.observe(el));
+  reveals.forEach(el => revealObserver.observe(el));
 
   // Reveal hero immediately
   setTimeout(() => {
@@ -651,6 +652,70 @@ function initForm() {
 }
 
 // ─── INIT ──────────────────────────────────
+// --- FEATURED EVENTS RENDERER ---
+function initFeaturedEvents() {
+  const grid = document.getElementById('featuredEventsGrid');
+  const specials = document.getElementById('weeklySpecials');
+  if (!grid || typeof FEATURED_EVENTS === 'undefined') return;
+
+  // Show first 3 events as spotlight cards
+  const eventsToShow = FEATURED_EVENTS.slice(0, 3);
+  grid.innerHTML = eventsToShow.map((ev, i) => `
+    <a href="${ev.link}" target="_blank" rel="noopener noreferrer" class="spotlight-card reveal${i > 0 ? ' reveal-delay-' + i : ''}" style="text-decoration:none;color:inherit;">
+      <div class="spotlight-date">${ev.date}</div>
+      <h3 class="spotlight-restaurant">${ev.restaurant}</h3>
+      <h4 class="spotlight-title">${ev.title}</h4>
+      <p class="spotlight-desc">${ev.desc}</p>
+      <div class="spotlight-meta">
+        <span class="badge badge-town">${ev.town}</span>
+        <span class="spotlight-time">${ev.time}</span>
+      </div>
+    </a>
+  `).join('');
+
+  // Show remaining events as a compact list
+  if (FEATURED_EVENTS.length > 3) {
+    const remaining = FEATURED_EVENTS.slice(3);
+    let moreHtml = '<div class="more-events reveal">';
+    moreHtml += '<h3 class="more-events-title">Also This Week</h3>';
+    moreHtml += '<div class="more-events-list">';
+    remaining.forEach(ev => {
+      moreHtml += `
+        <a href="${ev.link}" target="_blank" rel="noopener noreferrer" class="more-event-row">
+          <span class="more-event-date">${ev.weekday} ${ev.date.split(' ')[1]}</span>
+          <span class="more-event-name">${ev.restaurant} — ${ev.title}</span>
+          <span class="more-event-time">${ev.time}</span>
+          <span class="badge badge-town">${ev.town}</span>
+        </a>`;
+    });
+    moreHtml += '</div></div>';
+    grid.insertAdjacentHTML('afterend', moreHtml);
+  }
+
+  // Re-observe dynamically added .reveal elements
+  if (revealObserver) {
+    document.querySelectorAll('.events-spotlight-section .reveal:not(.visible)').forEach(el => {
+      revealObserver.observe(el);
+    });
+  }
+
+  // Weekly recurring specials
+  if (specials && typeof WEEKLY_SPECIALS !== 'undefined' && WEEKLY_SPECIALS.length > 0) {
+    let html = '<h3 class="weekly-specials-title">Weekly Recurring Specials</h3>';
+    html += '<div class="weekly-specials-list">';
+    WEEKLY_SPECIALS.forEach(s => {
+      html += `
+        <div class="weekly-special-row">
+          <span class="weekly-special-day">${s.day}</span>
+          <span class="weekly-special-deal"><strong>${s.restaurant}</strong> — ${s.deal}</span>
+          <span class="badge badge-town">${s.town}</span>
+        </div>`;
+    });
+    html += '</div>';
+    specials.innerHTML = html;
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   populateDropdowns();
   initNav();
@@ -658,4 +723,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initWheel();
   initDirectory();
   initForm();
+  initFeaturedEvents();
 });

@@ -1026,11 +1026,103 @@ button, select, input, textarea {
 .spotlight-link:hover {
   color: var(--accent-hover);
 }
+.spotlight-time {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+}
 .spotlight-actions {
   display: flex;
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* Also This Week — compact event list */
+.more-events {
+  margin-top: 32px;
+}
+.more-events-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.more-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.more-event-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: background 0.2s, border-color 0.2s;
+}
+.more-event-row:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+.more-event-date {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 700;
+  min-width: 50px;
+}
+.more-event-name {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.more-event-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Weekly Recurring Specials */
+.weekly-specials {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--bg-glass-border);
+}
+.weekly-specials-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.weekly-specials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.weekly-special-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+.weekly-special-day {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 700;
+  min-width: 70px;
+}
+.weekly-special-deal {
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
 }
 
 /* ============================================
@@ -1057,6 +1149,18 @@ button, select, input, textarea {
     margin-left: auto;
     margin-right: auto;
   }
+  .more-event-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .more-event-date { min-width: auto; }
+  .more-event-name { width: 100%; }
+  .weekly-special-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .weekly-special-day { min-width: auto; }
+  .weekly-special-deal { width: 100%; }
 }
 
 @media (max-width: 768px) {

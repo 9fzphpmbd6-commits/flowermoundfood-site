@@ -149,46 +149,21 @@
     </div>
   </section>
 
-  <!-- WHAT'S HAPPENING THIS WEEK -->
+  <!-- THIS WEEK'S FEATURED EVENTS -->
   <section class="section events-spotlight-section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Don't Miss Out</span>
-        <h2 class="section-title">What's Happening <span class="text-gradient">This Week</span></h2>
-        <p class="section-subtitle">Specials, live music, and events from local restaurants</p>
+        <span class="section-tag">This Week</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Events</span></h2>
+        <p class="section-subtitle">Live music, specials, and happenings at local restaurants this week</p>
       </div>
 
-      <div class="spotlight-grid">
-        <div class="spotlight-card reveal">
-          <div class="spotlight-date">MAR 10</div>
-          <h3 class="spotlight-restaurant">Marty B's</h3>
-          <h4 class="spotlight-title">Live Jazz Night</h4>
-          <p class="spotlight-desc">Enjoy smooth jazz with craft cocktails and Southern-inspired bites every Tuesday evening starting at 7 PM.</p>
-          <div class="spotlight-meta">
-            <span class="badge badge-town">Bartonville</span>
-            <a href="./events.html" class="spotlight-link">Details →</a>
-          </div>
-        </div>
-        <div class="spotlight-card reveal reveal-delay-1">
-          <div class="spotlight-date">MAR 11</div>
-          <h3 class="spotlight-restaurant">Tycoon Flats</h3>
-          <h4 class="spotlight-title">Half-Price Appetizers</h4>
-          <p class="spotlight-desc">All appetizers half off from 4–7 PM. Perfect for after-work bites with friends and family.</p>
-          <div class="spotlight-meta">
-            <span class="badge badge-town">Flower Mound</span>
-            <a href="./events.html" class="spotlight-link">Details →</a>
-          </div>
-        </div>
-        <div class="spotlight-card reveal reveal-delay-2">
-          <div class="spotlight-date">MAR 12</div>
-          <h3 class="spotlight-restaurant">El Fenix</h3>
-          <h4 class="spotlight-title">$2 Taco Thursday</h4>
-          <p class="spotlight-desc">Build-your-own tacos for just $2 each all day. Mix and match proteins and fresh toppings.</p>
-          <div class="spotlight-meta">
-            <span class="badge badge-town">Highland Village</span>
-            <a href="./events.html" class="spotlight-link">Details →</a>
-          </div>
-        </div>
+      <div class="spotlight-grid" id="featuredEventsGrid">
+        <!-- Populated by featured-events.js -->
+      </div>
+
+      <div class="weekly-specials reveal" id="weeklySpecials">
+        <!-- Populated by featured-events.js -->
       </div>
 
       <div class="spotlight-actions reveal">
@@ -518,6 +493,7 @@
     </div>
   </footer>
 
+  <script src="./featured-events.js"></script>
   <script src="./app.js"></script>
   <script type="application/ld+json">
   {
