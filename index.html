@@ -1,440 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flower Mound Food — Discover Where to Eat in Flower Mound TX & Beyond</title>
-<meta name="description" content="Your guide to the best eats in Flower Mound, Highland Village, Argyle, Bartonville, Lantana & Lewisville. Spin the wheel, browse 150+ restaurants, and discover your next favorite meal.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RMHL6KV5H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6RMHL6KV5H');
+  </script>
+  <title>Find the Best Places to Eat in Flower Mound TX & Nearby | Flower Mound Food</title>
+  <meta name="description" content="Your local guide to 150+ restaurants in Flower Mound, Highland Village, Argyle, Bartonville, Lantana & Lewisville TX. Spin the wheel, browse the directory, or read our restaurant guides.">
+  <link rel="canonical" href="https://flowermoundfood.com/">
+  <meta property="og:title" content="Find the Best Places to Eat in Flower Mound TX & Nearby">
+  <meta property="og:description" content="Your local guide to 150+ restaurants in Flower Mound, Highland Village, Argyle, Bartonville, Lantana & Lewisville TX. Spin the wheel or browse the directory.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flowermoundfood.com/">
+  <meta property="og:site_name" content="Flower Mound Food">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Find the Best Places to Eat in Flower Mound TX & Nearby">
+  <meta name="twitter:description" content="Your local guide to 150+ restaurants in Flower Mound TX & beyond.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="noise-overlay"></div>
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
 
-<!-- NAVIGATION -->
-<nav id="navbar">
-<div class="nav-inner">
-<a href="/#home" class="nav-brand">
-<span class="brand-icon">🍽</span>
-<span><span class="brand-accent">FM</span>Food</span>
-</a>
-<div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
-<div class="nav-links" id="navLinks">
-<a href="/#home" class="nav-link active">Home</a>
-<a href="/#wheel" class="nav-link">Spin</a>
-<a href="/#directory" class="nav-link">Directory</a>
-<a href="/events" class="nav-link">Events</a>
-<a href="/#pricing" class="nav-link" style="background:var(--accent);color:var(--bg-primary);font-weight:700;">For Restaurants</a>
-<a href="/#submit" class="nav-link">Add Yours</a>
-<a href="/blog" class="nav-link">Blog</a>
-</div>
-</div>
-</nav>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">
+        <span class="brand-icon">🍽</span>
+        <span class="brand-text">FM<span class="brand-accent">Food</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#wheel" class="nav-link">Spin</a>
+        <a href="#directory" class="nav-link">Directory</a>
+        <a href="./events.html" class="nav-link">Events</a>
+        <a href="#pricing" class="nav-link">Get Featured</a>
+        <a href="#submit" class="nav-link">Add Yours</a>
+        <a href="./blog.html" class="nav-link">Blog</a>
+      </div>
+    </div>
+  </nav>
 
-<!-- EVENTS TICKER -->
-<div class="events-ticker" id="eventsTicker">
-<span class="ticker-badge">TONIGHT</span>
-<div class="ticker-track">
-<div class="ticker-content">
-<span class="ticker-item"><span class="ticker-dot"></span>Marty B's — Live Jazz 7PM</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Tycoon — Half-Price Apps</span>
-<span class="ticker-item"><span class="ticker-dot"></span>$2 Taco Tuesday at El Fenix</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Cork & Pig — Wine Night BOGO</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Twisted Root — Live Trivia 8PM</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Shoal Creek Tavern — Pint Night</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Marty B's — Live Jazz 7PM</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Tycoon — Half-Price Apps</span>
-<span class="ticker-item"><span class="ticker-dot"></span>$2 Taco Tuesday at El Fenix</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Cork & Pig — Wine Night BOGO</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Twisted Root — Live Trivia 8PM</span>
-<span class="ticker-item"><span class="ticker-dot"></span>Shoal Creek Tavern — Pint Night</span>
-</div>
-</div>
-</div>
+  <!-- EVENTS TICKER -->
+  <div class="events-ticker" id="eventsTicker">
+    <div class="ticker-badge">TONIGHT</div>
+    <div class="ticker-track">
+      <div class="ticker-content">
+        <span class="ticker-item"><span class="ticker-dot"></span>Marty B's — Live Jazz 7PM</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Tycoon — Half-Price Apps</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>$2 Taco Tuesday at El Fenix</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Cork &amp; Pig — Wine Night BOGO</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Twisted Root — Live Trivia 8PM</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Shoal Creek Tavern — Pint Night</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Marty B's — Live Jazz 7PM</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Tycoon — Half-Price Apps</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>$2 Taco Tuesday at El Fenix</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Cork &amp; Pig — Wine Night BOGO</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Twisted Root — Live Trivia 8PM</span>
+        <span class="ticker-item"><span class="ticker-dot"></span>Shoal Creek Tavern — Pint Night</span>
+      </div>
+    </div>
+  </div>
 
-<!-- HERO SECTION -->
-<section class="hero-section section" id="home">
-<div class="hero-bg">
-<div class="hero-gradient-orb orb-1"></div>
-<div class="hero-gradient-orb orb-2"></div>
-<div class="hero-gradient-orb orb-3"></div>
-</div>
-<div class="container hero-content">
-<div class="hero-badge reveal">150+ Local Restaurants</div>
-<h1 class="hero-title reveal reveal-delay-1">Flower Mound<br><span class="text-gradient">Food</span></h1>
-<p class="hero-subtitle reveal reveal-delay-2">Your guide to the best eats in Flower Mound, Highland Village, Argyle, Bartonville, Lantana & Lewisville</p>
-<div class="hero-ctas reveal reveal-delay-3">
-<a href="/#wheel" class="btn btn-primary btn-lg">⭕ Spin the Wheel</a>
-<a href="/#directory" class="btn btn-outline btn-lg">Browse Restaurants</a>
-</div>
-<div class="hero-pills reveal reveal-delay-3">
-<a href="/best-mexican" class="hero-pill">🌮 Tex-Mex</a>
-<a href="/best-pizza" class="hero-pill">🍕 Pizza</a>
-<a href="/best-asian" class="hero-pill">🍣 Asian</a>
-<a href="/best-bbq" class="hero-pill">🔥 BBQ</a>
-<a href="/best-italian" class="hero-pill">🍝 Italian</a>
-<a href="/best-breakfast" class="hero-pill">🥞 Breakfast</a>
-</div>
-<div class="hero-scroll-hint reveal reveal-delay-3">
-SCROLL TO EXPLORE
-<div class="scroll-line"></div>
-</div>
-</div>
-</section>
+  <!-- HERO -->
+  <section id="home" class="section hero-section">
+    <div class="hero-bg">
+      <div class="hero-gradient-orb orb-1"></div>
+      <div class="hero-gradient-orb orb-2"></div>
+      <div class="hero-gradient-orb orb-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="reveal">
+        <span class="hero-badge">150+ Local Restaurants</span>
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Find the best places to eat in<br><span class="text-gradient">Flower Mound &amp; nearby</span>
+      </h1>
+      <p class="hero-subtitle reveal reveal-delay-2">
+        Browse local restaurants in Flower Mound, Highland Village, Lantana, Argyle, Bartonville, and Lewisville to find your next favorite meal.
+      </p>
+      <div class="hero-ctas reveal reveal-delay-3">
+        <a href="#directory" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Browse All Restaurants
+        </a>
+        <a href="#wheel" class="btn btn-outline btn-lg">
+          🎰 Spin the Wheel for a Random Pick
+        </a>
+      </div>
+      <!-- Quick-Browse Category Pills -->
+      <div class="hero-pills reveal reveal-delay-3">
+        <a href="./best-mexican.html" class="hero-pill">🌮 Tex-Mex</a>
+        <a href="./best-pizza.html" class="hero-pill">🍕 Pizza</a>
+        <a href="./best-asian.html" class="hero-pill">🍣 Asian</a>
+        <a href="./best-bbq.html" class="hero-pill">🔥 BBQ</a>
+        <a href="./best-italian.html" class="hero-pill">🍝 Italian</a>
+        <a href="./best-breakfast.html" class="hero-pill">🥞 Breakfast</a>
+      </div>
+      <div class="hero-scroll-hint reveal reveal-delay-3">
+        <div class="scroll-line"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+  </section>
 
-<!-- NEW: FOR RESTAURANTS HERO BLOCK -->
-<section class="section" id="for-restaurants" style="padding:80px 0;background:linear-gradient(135deg, rgba(245,158,11,0.08) 0%, rgba(16,185,129,0.06) 100%);border-top:1px solid rgba(245,158,11,0.15);border-bottom:1px solid rgba(245,158,11,0.15);">
-<div class="container" style="text-align:center;">
-<div class="section-tag reveal">FOR RESTAURANT OWNERS</div>
-<h2 class="section-title reveal reveal-delay-1" style="font-size:clamp(1.8rem,4vw,2.8rem);">Own a Restaurant in Flower Mound<br>or Nearby?</h2>
-<p class="section-subtitle reveal reveal-delay-2" style="margin-bottom:16px;">Get in front of locals actively searching for where to eat tonight. Join 150+ restaurants already listed.</p>
-<p class="reveal reveal-delay-2" style="color:var(--accent);font-family:var(--font-display);font-weight:700;font-size:1.1rem;margin-bottom:32px;">Featured listings get 2x visibility on the spin wheel + highlighted directory placement</p>
-<div class="reveal reveal-delay-3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-<a href="https://buy.stripe.com/8x27sL5QO4RRePdbpE1ZS01" class="btn btn-primary btn-lg" style="background:var(--cta);font-size:1.1rem;padding:18px 40px;">Get Featured — $29/mo</a>
-<a href="/#submit" class="btn btn-outline btn-lg">List for Free</a>
-</div>
-</div>
-</section>
+  <!-- POPULAR THIS WEEK -->
+  <section class="section popular-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Trending</span>
+        <h2 class="section-title">Popular <span class="text-gradient">This Week</span></h2>
+        <p class="section-subtitle">What locals are talking about right now</p>
+      </div>
+      <div class="popular-grid">
+        <a href="./best-mexican.html" class="popular-card reveal">
+          <span class="popular-emoji">🌮</span>
+          <h3>Best Tex-Mex</h3>
+          <p>16 restaurants from Mi Dia to Taco Ocho</p>
+        </a>
+        <a href="./blog.html#best-date-night-restaurants-flower-mound" class="popular-card reveal reveal-delay-1">
+          <span class="popular-emoji">🍷</span>
+          <h3>Date Night Guide</h3>
+          <p>10 romantic spots for your next evening out</p>
+        </a>
+        <a href="./flower-mound.html" class="popular-card reveal reveal-delay-2">
+          <span class="popular-emoji">📍</span>
+          <h3>Flower Mound</h3>
+          <p>62 restaurants in our home base</p>
+        </a>
+        <a href="./blog.html#hidden-gems-flower-mound-restaurants" class="popular-card reveal reveal-delay-3">
+          <span class="popular-emoji">💎</span>
+          <h3>Hidden Gems</h3>
+          <p>8 underrated spots worth discovering</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<!-- TRENDING / POPULAR THIS WEEK -->
-<section class="popular-section section" style="padding:60px 0;">
-<div class="container">
-<div class="section-header">
-<div class="section-tag reveal">TRENDING</div>
-<h2 class="section-title reveal reveal-delay-1"><span>Popular</span><br><span class="text-gradient">This Week</span></h2>
-<p class="section-subtitle reveal reveal-delay-2">What locals are talking about right now</p>
-</div>
-<div class="popular-grid reveal">
-<a href="/best-mexican" class="popular-card">
-<span class="popular-emoji">🌮</span>
-<h3>Best Tex-Mex</h3>
-<p>16 restaurants from Mi Dia to Taco Ocho</p>
-</a>
-<a href="/blog#best-date-night-restaurants-flower-mound" class="popular-card">
-<span class="popular-emoji">🍷</span>
-<h3>Date Night Guide</h3>
-<p>10 romantic spots for your next evening out</p>
-</a>
-<a href="/flower-mound" class="popular-card">
-<span class="popular-emoji">📍</span>
-<h3>Flower Mound</h3>
-<p>62 restaurants in our home base</p>
-</a>
-<a href="/blog#hidden-gems-flower-mound-restaurants" class="popular-card">
-<span class="popular-emoji">💎</span>
-<h3>Hidden Gems</h3>
-<p>8 underrated spots worth discovering</p>
-</a>
-</div>
-</div>
-</section>
+  <!-- WHAT'S HAPPENING THIS WEEK -->
+  <section class="section events-spotlight-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Don't Miss Out</span>
+        <h2 class="section-title">What's Happening <span class="text-gradient">This Week</span></h2>
+        <p class="section-subtitle">Specials, live music, and events from local restaurants</p>
+      </div>
 
-<!-- PRICING SECTION (MOVED HIGHER, SIMPLIFIED TO 2 TIERS) -->
-<section class="pricing-section section" id="pricing">
-<div class="container">
-<div class="section-header">
-<div class="section-tag reveal">FOR RESTAURANTS</div>
-<h2 class="section-title reveal reveal-delay-1"><span>Get More</span><br><span class="text-gradient">Customers</span></h2>
-<p class="section-subtitle reveal reveal-delay-2">Stand out to thousands of locals looking for their next meal</p>
-</div>
-<div class="pricing-grid reveal" style="grid-template-columns:repeat(2,1fr);max-width:700px;">
-<!-- Basic -->
-<div class="pricing-card">
-<div class="pricing-tier">Basic</div>
-<div class="pricing-price">Free</div>
-<div class="pricing-period">forever</div>
-<ul class="pricing-features">
-<li>✓ Listed in directory</li>
-<li>✓ Included in spin wheel</li>
-<li>✓ Restaurant name + category shown</li>
-</ul>
-<a href="/#submit" class="btn btn-outline btn-block">Add Your Restaurant</a>
-</div>
-<!-- Featured -->
-<div class="pricing-card pricing-card-featured">
-<div class="popular-badge">MOST POPULAR</div>
-<div class="pricing-tier">Featured</div>
-<div class="pricing-price">$29<span class="pricing-unit">/mo</span></div>
-<div class="pricing-period">billed monthly</div>
-<ul class="pricing-features">
-<li>✓ Everything in Basic</li>
-<li>✓ 2× wheel visibility</li>
-<li>✓ Highlighted directory card</li>
-<li>✓ Link to your website</li>
-<li>✓ "Featured" badge</li>
-<li>✓ Priority in Staff Picks</li>
-<li>✓ Monthly social shoutout</li>
-</ul>
-<a href="https://buy.stripe.com/8x27sL5QO4RRePdbpE1ZS01" class="btn btn-primary btn-block" style="background:var(--cta);">Upgrade to Featured</a>
-</div>
-</div>
-</div>
-</section>
+      <div class="spotlight-grid">
+        <div class="spotlight-card reveal">
+          <div class="spotlight-date">MAR 10</div>
+          <h3 class="spotlight-restaurant">Marty B's</h3>
+          <h4 class="spotlight-title">Live Jazz Night</h4>
+          <p class="spotlight-desc">Enjoy smooth jazz with craft cocktails and Southern-inspired bites every Tuesday evening starting at 7 PM.</p>
+          <div class="spotlight-meta">
+            <span class="badge badge-town">Bartonville</span>
+            <a href="./events.html" class="spotlight-link">Details →</a>
+          </div>
+        </div>
+        <div class="spotlight-card reveal reveal-delay-1">
+          <div class="spotlight-date">MAR 11</div>
+          <h3 class="spotlight-restaurant">Tycoon Flats</h3>
+          <h4 class="spotlight-title">Half-Price Appetizers</h4>
+          <p class="spotlight-desc">All appetizers half off from 4–7 PM. Perfect for after-work bites with friends and family.</p>
+          <div class="spotlight-meta">
+            <span class="badge badge-town">Flower Mound</span>
+            <a href="./events.html" class="spotlight-link">Details →</a>
+          </div>
+        </div>
+        <div class="spotlight-card reveal reveal-delay-2">
+          <div class="spotlight-date">MAR 12</div>
+          <h3 class="spotlight-restaurant">El Fenix</h3>
+          <h4 class="spotlight-title">$2 Taco Thursday</h4>
+          <p class="spotlight-desc">Build-your-own tacos for just $2 each all day. Mix and match proteins and fresh toppings.</p>
+          <div class="spotlight-meta">
+            <span class="badge badge-town">Highland Village</span>
+            <a href="./events.html" class="spotlight-link">Details →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- EVENTS SPOTLIGHT -->
-<section class="events-spotlight-section section">
-<div class="container">
-<div class="section-header">
-<div class="section-tag reveal">DON'T MISS OUT</div>
-<h2 class="section-title reveal reveal-delay-1"><span>What's Happening</span><br><span class="text-gradient">This Week</span></h2>
-<p class="section-subtitle reveal reveal-delay-2">Specials, live music, and events from local restaurants</p>
-</div>
-<div class="spotlight-grid reveal">
-<div class="spotlight-card">
-<div class="spotlight-date">MAR 10</div>
-<div class="spotlight-restaurant">Marty B's</div>
-<h3 class="spotlight-title">Live Jazz Night</h3>
-<p class="spotlight-desc">Enjoy smooth jazz with craft cocktails and Southern-inspired bites every Tuesday evening starting at 7 PM.</p>
-<div class="spotlight-meta">
-<span class="badge badge-town">BARTONVILLE</span>
-<a href="/events" class="spotlight-link">Details →</a>
-</div>
-</div>
-<div class="spotlight-card">
-<div class="spotlight-date">MAR 11</div>
-<div class="spotlight-restaurant">Tycoon Flats</div>
-<h3 class="spotlight-title">Half-Price Appetizers</h3>
-<p class="spotlight-desc">All appetizers half off from 4–7 PM. Perfect for after-work bites with friends and family.</p>
-<div class="spotlight-meta">
-<span class="badge badge-town">FLOWER MOUND</span>
-<a href="/events" class="spotlight-link">Details →</a>
-</div>
-</div>
-<div class="spotlight-card">
-<div class="spotlight-date">MAR 12</div>
-<div class="spotlight-restaurant">El Fenix</div>
-<h3 class="spotlight-title">$2 Taco Thursday</h3>
-<p class="spotlight-desc">Build-your-own tacos for just $2 each all day. Mix and match proteins and fresh toppings.</p>
-<div class="spotlight-meta">
-<span class="badge badge-town">HIGHLAND VILLAGE</span>
-<a href="/events" class="spotlight-link">Details →</a>
-</div>
-</div>
-</div>
-<div class="spotlight-actions reveal">
-<a href="/events" class="btn btn-outline">View Full Events Calendar</a>
-<a href="/events#promote" class="btn btn-primary" style="background:var(--accent);font-weight:700;font-size:1rem;">📣 Promote Your Event — $10/day</a>
-</div>
-</div>
-</section>
+      <div class="spotlight-actions reveal">
+        <a href="./events.html" class="btn btn-outline btn-lg">View Full Events Calendar</a>
+        <a href="./events.html#promote" class="btn btn-primary btn-lg">Promote Your Event — $10/day</a>
+      </div>
+    </div>
+  </section>
 
-<!-- SPIN WHEEL -->
-<section class="wheel-section section" id="wheel">
-<div class="container">
-<div class="section-header">
-<div class="section-tag reveal">CAN'T DECIDE?</div>
-<h2 class="section-title reveal reveal-delay-1"><span>Spin the</span><br><span class="text-gradient">Wheel</span></h2>
-<p class="section-subtitle reveal reveal-delay-2">Let fate choose your next meal. Filter by cuisine or town, then spin!</p>
-</div>
-<div class="wheel-layout reveal">
-<div class="wheel-filters">
-<div class="filter-group">
-<label class="filter-label">CUISINE</label>
-<select class="filter-select" id="wheelCuisineFilter"><option value="all">All Cuisines</option></select>
-</div>
-<div class="filter-group">
-<label class="filter-label">TOWN</label>
-<select class="filter-select" id="wheelTownFilter"><option value="all">All Towns</option></select>
-</div>
-<button class="btn btn-primary spin-trigger-btn" id="spinBtn">SPIN!</button>
-</div>
-<div class="wheel-stage">
-<div class="wheel-container">
-<div class="wheel-pointer"></div>
-<canvas id="wheelCanvas"></canvas>
-<div class="wheel-center-label">TAP<br>SPIN</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Winner Modal -->
-<div class="modal-overlay" id="winnerModal">
-<div class="modal-card">
-<span class="modal-close" id="modalClose">×</span>
-<div class="modal-tag">YOUR NEXT MEAL</div>
-<h3 class="modal-title" id="winnerName"></h3>
-<div class="modal-badges">
-<span class="badge badge-category" id="winnerCategory"></span>
-<span class="badge badge-town" id="winnerTown"></span>
-</div>
-<div class="modal-actions">
-<button class="btn btn-primary" id="spinAgainBtn">Spin Again</button>
-<button class="btn btn-outline" id="modalCloseBtn">Close</button>
-</div>
-</div>
-</div>
-</section>
+  <!-- SPIN WHEEL -->
+  <section id="wheel" class="section wheel-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Can't Decide?</span>
+        <h2 class="section-title">Spin the <span class="text-gradient">Wheel</span></h2>
+        <p class="section-subtitle">Let fate choose your next meal. Filter by cuisine or town, then spin!</p>
+      </div>
 
-<!-- DIRECTORY -->
-<section class="directory-section section" id="directory">
-<div class="container">
-<div class="section-header">
-<div class="section-tag reveal">EXPLORE</div>
-<h2 class="section-title reveal reveal-delay-1"><span>Restaurant</span><br><span class="text-gradient">Directory</span></h2>
-<p class="section-subtitle reveal reveal-delay-2">Browse all local restaurants in one place</p>
-</div>
-<div class="directory-controls reveal">
-<div class="search-box">
-<input type="text" class="search-input" id="searchInput" placeholder="Search restaurants..." aria-label="Search restaurants...">
-</div>
-<div class="filter-row">
-<select class="filter-select" id="dirCuisineFilter"><option value="all">All Cuisines</option></select>
-<select class="filter-select" id="dirTownFilter"><option value="all">All Towns</option></select>
-<select class="filter-select" id="dirSortFilter">
-<option value="alpha">A → Z</option>
-<option value="town">By Town</option>
-<option value="category">By Category</option>
-</select>
-</div>
-<div class="results-count" id="resultsCount"></div>
-</div>
-<div class="directory-grid" id="directoryGrid"></div>
-</div>
-</section>
+      <div class="wheel-layout">
+        <div class="wheel-filters reveal">
+          <div class="filter-group">
+            <label class="filter-label">Cuisine</label>
+            <select id="wheelCuisineFilter" class="filter-select">
+              <option value="all">All Cuisines</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label">Town</label>
+            <select id="wheelTownFilter" class="filter-select">
+              <option value="all">All Towns</option>
+            </select>
+          </div>
+          <button id="spinBtn" class="btn btn-primary btn-lg spin-trigger-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+            SPIN!
+          </button>
+        </div>
 
-<!-- SUBMIT FORM -->
-<section class="submit-section section" id="submit">
-<div class="container">
-<div class="section-header">
-<div class="section-tag reveal">JOIN US</div>
-<h2 class="section-title reveal reveal-delay-1"><span>Don't See Your</span><br><span class="text-gradient">Restaurant?</span></h2>
-<p class="section-subtitle reveal reveal-delay-2">Join 150+ local restaurants and get discovered by hungry locals</p>
-<p class="reveal reveal-delay-2" style="color:var(--accent);font-size:0.9rem;margin-top:8px;font-weight:600;">Start free, then upgrade any time to Featured to boost visibility.</p>
-</div>
-<form class="submit-form reveal" id="submitForm">
-<div class="form-grid">
-<div>
-<label class="form-label">Restaurant Name *</label>
-<input type="text" class="form-input" name="restaurant" required placeholder="e.g. Tony's Tacos" aria-label="e.g. Tony's Tacos">
-</div>
-<div>
-<label class="form-label">Contact Name *</label>
-<input type="text" class="form-input" name="contact" required placeholder="Your full name" aria-label="Your full name">
-</div>
-<div>
-<label class="form-label">Email *</label>
-<input type="email" class="form-input" name="email" required placeholder="you@restaurant.com" aria-label="you@restaurant.com">
-</div>
-<div>
-<label class="form-label">Phone</label>
-<input type="tel" class="form-input" name="phone" placeholder="(940) 555-0100" aria-label="(940) 555-0100">
-</div>
-<div>
-<label class="form-label">Cuisine Category *</label>
-<select class="form-input" name="cuisine" id="submitCuisine" required><option value="" selected>Select a category...</option></select>
-</div>
-<div>
-<label class="form-label">Town *</label>
-<select class="form-input" name="town" id="submitTown" required><option value="" selected>Select a town...</option></select>
-</div>
-<div class="form-group-full">
-<label class="form-label">Website URL</label>
-<input type="url" class="form-input" name="website" placeholder="https://www.yourrestaurant.com" aria-label="https://www.yourrestaurant.com">
-</div>
-<div class="form-group-full">
-<label class="form-label">Message</label>
-<textarea class="form-input form-textarea" name="message" placeholder="Tell us about your restaurant..."></textarea>
-</div>
-</div>
-<button type="submit" class="btn btn-primary btn-block btn-lg">Submit Your Restaurant</button>
-</form>
-</div>
-</section>
+        <div class="wheel-stage reveal">
+          <div class="wheel-pointer"></div>
+          <div class="wheel-container" id="wheelContainer">
+            <canvas id="wheelCanvas" width="500" height="500"></canvas>
+          </div>
+          <div class="wheel-center-label">TAP<br>SPIN</div>
+        </div>
+      </div>
+    </div>
 
-<!-- BROWSE BY TOWN -->
-<section class="explore-towns-section section">
-<div class="container">
-<div class="section-header">
-<div class="section-tag reveal">EXPLORE</div>
-<h2 class="section-title reveal reveal-delay-1"><span>Browse by</span><br><span class="text-gradient">Town</span></h2>
-<p class="section-subtitle reveal reveal-delay-2">Find restaurants in your neighborhood</p>
-</div>
-<div class="town-grid reveal">
-<a href="/flower-mound" class="town-card"><span class="town-count">62</span><h3>Flower Mound</h3></a>
-<a href="/highland-village" class="town-card"><span class="town-count">11</span><h3>Highland Village</h3></a>
-<a href="/lewisville" class="town-card"><span class="town-count">13</span><h3>Lewisville</h3></a>
-<a href="/argyle" class="town-card"><span class="town-count">8</span><h3>Argyle</h3></a>
-<a href="/bartonville" class="town-card"><span class="town-count">6</span><h3>Bartonville</h3></a>
-<a href="/lantana" class="town-card"><span class="town-count">4</span><h3>Lantana</h3></a>
-</div>
-</div>
-</section>
+    <!-- Winner Modal -->
+    <div class="modal-overlay" id="winnerModal">
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-confetti"></div>
+        <span class="modal-tag">Your Next Meal</span>
+        <h3 class="modal-title" id="winnerName"></h3>
+        <div class="modal-badges">
+          <span class="badge badge-category" id="winnerCategory"></span>
+          <span class="badge badge-town" id="winnerTown"></span>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="spinAgainBtn">Spin Again</button>
+          <button class="btn btn-outline" id="modalCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- BLOG CTA -->
-<section class="blog-cta-section section">
-<div class="container">
-<div class="section-header">
-<div class="section-tag reveal">READ</div>
-<h2 class="section-title reveal reveal-delay-1"><span>From the</span><br><span class="text-gradient">Blog</span></h2>
-<p class="section-subtitle reveal reveal-delay-2">Local guides, hidden gems, and dining tips</p>
-</div>
-<div class="blog-cta-grid reveal">
-<a href="/blog#best-date-night-restaurants-flower-mound" class="blog-cta-card">
-<span class="blog-cta-emoji">🍷</span>
-<h3>Best Date Night Restaurants</h3>
-<p>From upscale steakhouses to cozy wine bars</p>
-</a>
-<a href="/blog#best-family-restaurants-flower-mound" class="blog-cta-card">
-<span class="blog-cta-emoji">🍕</span>
-<h3>Best Family Restaurants</h3>
-<p>Where everyone at the table leaves happy</p>
-</a>
-<a href="/blog#hidden-gems-flower-mound-restaurants" class="blog-cta-card">
-<span class="blog-cta-emoji">💎</span>
-<h3>Hidden Gems</h3>
-<p>8 underrated spots worth discovering</p>
-</a>
-</div>
-<div class="blog-cta-action reveal">
-<a href="/blog" class="btn btn-outline">Read All Guides →</a>
-</div>
-</div>
-</section>
+  <!-- DIRECTORY -->
+  <section id="directory" class="section directory-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Explore</span>
+        <h2 class="section-title">Restaurant <span class="text-gradient">Directory</span></h2>
+        <p class="section-subtitle">Browse all local restaurants in one place</p>
+      </div>
 
-<!-- FOOTER -->
-<footer class="footer">
-<div class="container footer-inner">
-<div class="footer-brand">
-<span>🍽</span>
-<span class="brand-text">Flower Mound<br>Food</span>
-<p class="footer-tagline">Discover where to eat in Flower Mound & beyond</p>
-</div>
-<div class="footer-links">
-<a href="/#home">Home</a>
-<a href="/#wheel">Spin the Wheel</a>
-<a href="/#directory">Directory</a>
-<a href="/#pricing">For Restaurants</a>
-<a href="/#submit">Add Your Restaurant</a>
-<a href="/blog">Blog</a>
-<a href="/events">Events</a>
-</div>
-<div class="footer-towns">
-<div class="footer-section-label">RESTAURANTS BY TOWN</div>
-<a href="/flower-mound">Flower Mound</a>
-<a href="/highland-village">Highland Village</a>
-<a href="/argyle">Argyle</a>
-<a href="/bartonville">Bartonville</a>
-<a href="/lantana">Lantana</a>
-<a href="/lewisville">Lewisville</a>
-</div>
-<div class="footer-cuisines">
-<div class="footer-section-label">RESTAURANTS BY CUISINE</div>
-<a href="/best-mexican">Tex-Mex</a>
-<a href="/best-pizza">Pizza</a>
-<a href="/best-asian">Asian</a>
-<a href="/best-bbq">BBQ</a>
-<a href="/best-italian">Italian</a>
-<a href="/best-breakfast">Breakfast</a>
-</div>
-<div class="footer-bottom" style="margin-top:32px;">
-<p>&copy; 2026 Flower Mound Food. All rights reserved.</p>
-<p>Want to advertise? <a href="mailto:flowermoundfood@gmail.com?subject=Advertising%20Inquiry%20-%20Flower%20Mound%20Food">Contact us</a></p>
-</div>
-</div>
-</footer>
+      <div class="directory-controls reveal">
+        <div class="search-box">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="searchInput" placeholder="Search restaurants..." class="search-input">
+        </div>
+        <div class="filter-row">
+          <select id="dirCuisineFilter" class="filter-select">
+            <option value="all">All Cuisines</option>
+          </select>
+          <select id="dirTownFilter" class="filter-select">
+            <option value="all">All Towns</option>
+          </select>
+          <select id="dirSortFilter" class="filter-select">
+            <option value="alpha">A → Z</option>
+            <option value="town">By Town</option>
+            <option value="category">By Category</option>
+          </select>
+        </div>
+        <div class="results-count" id="resultsCount">Showing 0 of 0 restaurants</div>
+        <p class="directory-hint">Use the filters above to narrow by town, cuisine, or sort order. Or just scroll — everyone's here.</p>
+      </div>
 
-<script src="app.js"></script>
+      <div class="directory-grid" id="directoryGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section pricing-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">For Restaurants</span>
+        <h2 class="section-title">Get More <span class="text-gradient">Customers</span></h2>
+        <p class="section-subtitle">Stand out to thousands of locals looking for their next meal</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Basic -->
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Basic</div>
+          <div class="pricing-price">Free</div>
+          <div class="pricing-period">forever</div>
+          <ul class="pricing-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Listed in directory</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Included in spin wheel</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Restaurant name + category shown</li>
+          </ul>
+          <a href="mailto:flowermoundfood@gmail.com?subject=Interested%20in%20Basic%20plan%20for%20%5BMy%20Restaurant%5D" class="btn btn-outline btn-block">Get Started</a>
+        </div>
+
+        <!-- Featured -->
+        <div class="pricing-card pricing-card-featured reveal reveal-delay-1">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-tier">Featured</div>
+          <div class="pricing-price">$29<span class="pricing-unit">/mo</span></div>
+          <div class="pricing-period">billed monthly</div>
+          <ul class="pricing-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything in Basic</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 2× wheel visibility</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Highlighted directory card</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Link to your website</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> "Featured" badge</li>
+          </ul>
+          <a href="https://buy.stripe.com/eVq5kDbb83NNcH53Xc1ZS00" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Get Started</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Premium</div>
+          <div class="pricing-price">$59<span class="pricing-unit">/mo</span></div>
+          <div class="pricing-period">billed monthly</div>
+          <ul class="pricing-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything in Featured</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 3× wheel visibility</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Top of directory listings</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> "Premium" badge + styling</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Custom description</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Link to online ordering</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Priority in Staff Picks</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Monthly social shoutout</li>
+          </ul>
+          <a href="https://buy.stripe.com/14A8wP4MKesr22r0L01ZS02" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT -->
+  <section id="submit" class="section submit-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Join Us</span>
+        <h2 class="section-title">Don't See Your <span class="text-gradient">Restaurant?</span></h2>
+        <p class="section-subtitle">Join 150+ local restaurants and get discovered by hungry locals</p>
+      </div>
+
+      <form class="submit-form reveal" id="submitForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Restaurant Name *</label>
+            <input type="text" name="restaurant" required class="form-input" placeholder="e.g. Tony's Tacos">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contact Name *</label>
+            <input type="text" name="contact" required class="form-input" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email *</label>
+            <input type="email" name="email" required class="form-input" placeholder="you@restaurant.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone</label>
+            <input type="tel" name="phone" class="form-input" placeholder="(940) 555-0100">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Cuisine Category *</label>
+            <select name="cuisine" required class="form-input" id="submitCuisine">
+              <option value="">Select a category...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Town *</label>
+            <select name="town" required class="form-input" id="submitTown">
+              <option value="">Select a town...</option>
+            </select>
+          </div>
+          <div class="form-group form-group-full">
+            <label class="form-label">Website URL</label>
+            <input type="url" name="website" class="form-input" placeholder="https://www.yourrestaurant.com">
+          </div>
+          <div class="form-group form-group-full">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-input form-textarea" rows="3" placeholder="Tell us about your restaurant..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Submit Your Restaurant</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- EXPLORE BY TOWN -->
+  <section class="section explore-towns-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Explore</span>
+        <h2 class="section-title">Browse by <span class="text-gradient">Town</span></h2>
+        <p class="section-subtitle">Find restaurants in your neighborhood</p>
+      </div>
+      <div class="town-grid">
+        <a href="./flower-mound.html" class="town-card reveal">
+          <span class="town-count">62</span>
+          <h3>Flower Mound</h3>
+        </a>
+        <a href="./highland-village.html" class="town-card reveal reveal-delay-1">
+          <span class="town-count">11</span>
+          <h3>Highland Village</h3>
+        </a>
+        <a href="./lewisville.html" class="town-card reveal reveal-delay-1">
+          <span class="town-count">13</span>
+          <h3>Lewisville</h3>
+        </a>
+        <a href="./argyle.html" class="town-card reveal reveal-delay-2">
+          <span class="town-count">8</span>
+          <h3>Argyle</h3>
+        </a>
+        <a href="./bartonville.html" class="town-card reveal reveal-delay-2">
+          <span class="town-count">6</span>
+          <h3>Bartonville</h3>
+        </a>
+        <a href="./lantana.html" class="town-card reveal reveal-delay-3">
+          <span class="town-count">4</span>
+          <h3>Lantana</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FROM THE BLOG -->
+  <section class="section blog-cta-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Read</span>
+        <h2 class="section-title">From the <span class="text-gradient">Blog</span></h2>
+        <p class="section-subtitle">Local guides, hidden gems, and dining tips</p>
+      </div>
+      <div class="blog-cta-grid">
+        <a href="./blog.html#best-date-night-restaurants-flower-mound" class="blog-cta-card reveal">
+          <span class="blog-cta-emoji">🍷</span>
+          <h3>Best Date Night Restaurants</h3>
+          <p>From upscale steakhouses to cozy wine bars</p>
+        </a>
+        <a href="./blog.html#best-family-restaurants-flower-mound" class="blog-cta-card reveal reveal-delay-1">
+          <span class="blog-cta-emoji">🍕</span>
+          <h3>Best Family Restaurants</h3>
+          <p>Where everyone at the table leaves happy</p>
+        </a>
+        <a href="./blog.html#hidden-gems-flower-mound-restaurants" class="blog-cta-card reveal reveal-delay-2">
+          <span class="blog-cta-emoji">💎</span>
+          <h3>Hidden Gems</h3>
+          <p>8 underrated spots worth discovering</p>
+        </a>
+      </div>
+      <div class="blog-cta-action reveal">
+        <a href="./blog.html" class="btn btn-outline btn-lg">Read All Guides →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="brand-icon">🍽</span>
+          <span class="brand-text">Flower Mound <span class="brand-accent">Food</span></span>
+          <p class="footer-tagline">Discover where to eat in Flower Mound &amp; beyond</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#wheel">Spin the Wheel</a>
+          <a href="#directory">Directory</a>
+          <a href="#pricing">Get Featured</a>
+          <a href="#submit">Add Your Restaurant</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./events.html">Events</a>
+        </div>
+        <div class="footer-towns">
+          <p class="footer-section-label">Restaurants by Town</p>
+          <a href="./flower-mound.html">Flower Mound</a>
+          <a href="./highland-village.html">Highland Village</a>
+          <a href="./argyle.html">Argyle</a>
+          <a href="./bartonville.html">Bartonville</a>
+          <a href="./lantana.html">Lantana</a>
+          <a href="./lewisville.html">Lewisville</a>
+        </div>
+        <div class="footer-cuisines">
+          <p class="footer-section-label">Restaurants by Cuisine</p>
+          <a href="./best-mexican.html">Tex-Mex</a>
+          <a href="./best-pizza.html">Pizza</a>
+          <a href="./best-asian.html">Asian</a>
+          <a href="./best-bbq.html">BBQ</a>
+          <a href="./best-italian.html">Italian</a>
+          <a href="./best-breakfast.html">Breakfast</a>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Flower Mound Food. All rights reserved.</p>
+          <p>Want to advertise? <a href="mailto:flowermoundfood@gmail.com?subject=Advertising%20Inquiry%20-%20Flower%20Mound%20Food">Contact us</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Flower Mound Food",
+    "url": "https://flowermoundfood.com",
+    "description": "Your local guide to 150+ restaurants in Flower Mound, Highland Village, Argyle, Bartonville, Lantana & Lewisville TX.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://flowermoundfood.com/#directory?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Flower Mound Food",
+    "url": "https://flowermoundfood.com",
+    "description": "Local restaurant discovery platform covering Flower Mound, Highland Village, Argyle, Bartonville, Lantana & Lewisville, Texas.",
+    "email": "flowermoundfood@gmail.com",
+    "areaServed": [
+      {"@type": "City", "name": "Flower Mound", "addressRegion": "TX"},
+      {"@type": "City", "name": "Highland Village", "addressRegion": "TX"},
+      {"@type": "City", "name": "Argyle", "addressRegion": "TX"},
+      {"@type": "City", "name": "Bartonville", "addressRegion": "TX"},
+      {"@type": "City", "name": "Lantana", "addressRegion": "TX"},
+      {"@type": "City", "name": "Lewisville", "addressRegion": "TX"}
+    ]
+  }
+  </script>
 </body>
 </html>

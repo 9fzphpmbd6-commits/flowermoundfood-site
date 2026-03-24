@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RMHL6KV5H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6RMHL6KV5H');
+  </script>
+  <title>Local Events & Specials — Flower Mound Food</title>
+  <meta name="description" content="Discover restaurant events, specials, live music, happy hours, and more in Flower Mound, Highland Village, Argyle, Bartonville, Lantana & Lewisville. Promote your event starting at just $10.">
+  <meta name="keywords" content="Flower Mound events, Highland Village specials, restaurant happy hour, live music Flower Mound, Argyle dining events, Bartonville food specials, Lantana restaurants, Lewisville food events">
+  <link rel="canonical" href="https://flowermoundfood.com/events.html">
+  <meta property="og:title" content="Local Events & Specials — Flower Mound Food">
+  <meta property="og:description" content="Restaurant events, specials, live music, and happy hours in Flower Mound & beyond. Event promotion packages starting at $10.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flowermoundfood.com/events.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./events-style.css">
+</head>
+<body>
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
+
+  <!-- NAV -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="./index.html#home" class="nav-brand">
+        <span class="brand-icon">🍽</span>
+        <span class="brand-text">FM<span class="brand-accent">Food</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="./index.html#home" class="nav-link">Home</a>
+        <a href="./index.html#wheel" class="nav-link">Spin</a>
+        <a href="./index.html#directory" class="nav-link">Directory</a>
+        <a href="./events.html" class="nav-link active">Events</a>
+        <a href="./index.html#pricing" class="nav-link">Get Featured</a>
+        <a href="./index.html#submit" class="nav-link">Add Yours</a>
+        <a href="./blog.html" class="nav-link">Blog</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- EVENTS HERO -->
+  <section class="events-hero">
+    <div class="container">
+      <span class="section-tag">What's Happening</span>
+      <h1 class="events-hero-title">Local Events &amp; <span class="text-gradient">Specials</span></h1>
+      <p class="events-hero-subtitle">
+        Live music, happy hours, specials, and more from restaurants across Flower Mound, Highland Village, Argyle, Bartonville, Lantana &amp; Lewisville. <strong>Promote your event starting at just $10.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTER PILLS -->
+  <section class="events-filters-bar">
+    <div class="container">
+      <div class="filter-pills" id="filterPills">
+        <button class="filter-pill active" data-filter="all">All Events</button>
+        <button class="filter-pill" data-filter="this-week">This Week</button>
+        <button class="filter-pill" data-filter="special">Specials</button>
+        <button class="filter-pill" data-filter="live-music">Live Music</button>
+        <button class="filter-pill" data-filter="happy-hour">Happy Hour</button>
+        <button class="filter-pill" data-filter="family">Family</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT: EVENTS LIST + SIDEBAR -->
+  <section class="events-main-section">
+    <div class="container">
+      <div class="events-layout">
+        <!-- LEFT: EVENT LIST -->
+        <div class="events-list" id="eventsList">
+          <!-- Events are injected by events.js -->
+        </div>
+
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="events-sidebar">
+          <!-- Mini Calendar -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">March 2026</h3>
+            <div class="mini-calendar" id="miniCalendar">
+              <!-- Calendar rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Promote CTA -->
+          <div class="sidebar-card sidebar-cta-card">
+            <div class="sidebar-cta-icon">📣</div>
+            <h3 class="sidebar-cta-title">Promote Your Restaurant</h3>
+            <p class="sidebar-cta-desc">Get your event in front of thousands of local food lovers.</p>
+            <ul class="sidebar-cta-benefits">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Featured on homepage ticker
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Listed on events calendar
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Promoted in our directory
+              </li>
+            </ul>
+            <a href="#promote" class="btn btn-primary btn-block">Get Started — from $10</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMOTE SECTION -->
+  <section id="promote" class="section promote-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">For Restaurants</span>
+        <h2 class="section-title">Promote Your <span class="text-gradient">Event</span></h2>
+        <p class="section-subtitle">Get your specials, events, and happenings featured to thousands of local diners</p>
+      </div>
+
+      <!-- STEP 1: CHOOSE A PACKAGE -->
+      <div class="promote-step" id="promoteStep1">
+        <h3 class="promote-step-label">Step 1 &mdash; Choose Your Package</h3>
+        <div class="package-grid">
+          <div class="package-card" data-package="1day" data-link="https://buy.stripe.com/aFa00jdjggAz5eDctI1ZS04">
+            <div class="package-name">1 Day</div>
+            <div class="package-price">$10</div>
+            <div class="package-desc">Perfect for a one-time event or weekend special</div>
+          </div>
+          <div class="package-card package-card-popular" data-package="3day" data-link="https://buy.stripe.com/14A8wPbb84RR5eD79o1ZS05">
+            <div class="package-popular-badge">Best Value</div>
+            <div class="package-name">3 Days</div>
+            <div class="package-price">$25</div>
+            <div class="package-desc">Great for recurring weekly events &mdash; save $5</div>
+          </div>
+          <div class="package-card" data-package="7day" data-link="https://buy.stripe.com/dRm4gz7YWgAzbD18ds1ZS06">
+            <div class="package-name">7 Days</div>
+            <div class="package-price">$49</div>
+            <div class="package-desc">Full week of visibility &mdash; save $21</div>
+          </div>
+        </div>
+        <p class="package-includes-label">Every package includes:</p>
+        <ul class="package-includes-list">
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Featured on homepage ticker
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Listed on events calendar
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Promoted in our directory
+          </li>
+        </ul>
+      </div>
+
+      <!-- STEP 2: EVENT DETAILS -->
+      <div class="promote-step promote-step-hidden" id="promoteStep2">
+        <div class="promote-step2-header">
+          <h3 class="promote-step-label">Step 2 &mdash; Tell Us About Your Event</h3>
+          <button type="button" class="btn btn-outline btn-sm" id="changePackageBtn">&larr; Change Package</button>
+        </div>
+        <div class="selected-package-banner" id="selectedPackageBanner"></div>
+
+        <div class="promote-layout">
+          <!-- LEFT: FORM -->
+          <div class="promote-form-wrap">
+            <form class="promote-form" id="promoteForm">
+              <div class="form-group">
+                <label class="form-label">Restaurant Name *</label>
+                <input type="text" name="restaurant" required class="form-input" placeholder="e.g. Marty B's" id="promoRestaurant">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Event Title *</label>
+                <input type="text" name="title" required class="form-input" placeholder="e.g. Taco Tuesday, Live Music Night" id="promoTitle">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Description</label>
+                <textarea name="description" class="form-input form-textarea" rows="3" placeholder="Brief description of your event or special..." id="promoDesc"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Event Type *</label>
+                <select name="type" required class="form-input" id="promoType">
+                  <option value="">Select a type...</option>
+                  <option value="Special">Special</option>
+                  <option value="Live Music">Live Music</option>
+                  <option value="Happy Hour">Happy Hour</option>
+                  <option value="Family Event">Family Event</option>
+                  <option value="Grand Opening">Grand Opening</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Preferred Date(s) *</label>
+                <input type="text" name="dates" required class="form-input" placeholder="e.g. March 15-17, Every Tuesday in March" id="promoDates">
+                <p class="form-hint">Tell us which dates you'd like your event promoted</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Your Email *</label>
+                <input type="email" name="email" required class="form-input" placeholder="you@restaurant.com" id="promoEmail">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Logo or Image</label>
+                <textarea name="logo" class="form-input form-textarea" rows="2" placeholder="Paste a link to your logo or image (Google Drive, Dropbox, website URL, etc.)" id="promoLogo"></textarea>
+                <p class="form-hint">We'll use this to make your listing stand out. No logo? No worries &mdash; we'll use your restaurant name.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Anything else?</label>
+                <textarea name="notes" class="form-input form-textarea" rows="2" placeholder="Links to your website, social media, online ordering, etc." id="promoNotes"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-block" id="promoteSubmitBtn">Submit &amp; Continue to Payment</button>
+              <p class="form-disclaimer">Your event details will be emailed to us and you'll be redirected to secure checkout via Stripe.</p>
+            </form>
+          </div>
+
+          <!-- RIGHT: LIVE PREVIEW -->
+          <div class="promote-preview-wrap">
+            <h3 class="preview-label">Live Preview</h3>
+            <div class="preview-card" id="previewCard">
+              <div class="preview-date-badge" id="previewDate">MAR &mdash;</div>
+              <div class="preview-body">
+                <span class="preview-restaurant" id="previewRestaurant">Your Restaurant</span>
+                <h4 class="preview-title" id="previewTitle">Event Title</h4>
+                <p class="preview-desc" id="previewDesc">Your event description will appear here...</p>
+                <div class="preview-meta">
+                  <span class="badge badge-category" id="previewType">Event Type</span>
+                </div>
+              </div>
+            </div>
+            <div class="preview-benefits">
+              <h4 class="preview-benefits-title">What you get:</h4>
+              <ul>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                  Featured on homepage ticker
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                  Listed on events calendar
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                  Promoted in our directory
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SEO FOOTER TEXT -->
+  <section class="seo-footer-section">
+    <div class="container">
+      <p class="seo-footer-text">
+        Looking to advertise your restaurant in Flower Mound? Promote your specials, events, happy hours, and more to thousands of local food lovers. Flower Mound Food is the go-to local dining guide for Flower Mound, Highland Village, Argyle, Bartonville, Lantana, and Lewisville, Texas. Event promotion packages starting at just $10.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="brand-icon">🍽</span>
+          <span class="brand-text">Flower Mound <span class="brand-accent">Food</span></span>
+          <p class="footer-tagline">Discover where to eat in Flower Mound &amp; beyond</p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html#home">Home</a>
+          <a href="./index.html#wheel">Spin the Wheel</a>
+          <a href="./index.html#directory">Directory</a>
+          <a href="./events.html">Events</a>
+          <a href="./index.html#pricing">Get Featured</a>
+          <a href="./index.html#submit">Add Your Restaurant</a>
+          <a href="./blog.html">Blog</a>
+        </div>
+        <div class="footer-towns">
+          <p class="footer-section-label">Restaurants by Town</p>
+          <a href="./flower-mound.html">Flower Mound</a>
+          <a href="./highland-village.html">Highland Village</a>
+          <a href="./argyle.html">Argyle</a>
+          <a href="./bartonville.html">Bartonville</a>
+          <a href="./lantana.html">Lantana</a>
+          <a href="./lewisville.html">Lewisville</a>
+        </div>
+        <div class="footer-cuisines">
+          <p class="footer-section-label">Restaurants by Cuisine</p>
+          <a href="./best-mexican.html">Tex-Mex</a>
+          <a href="./best-pizza.html">Pizza</a>
+          <a href="./best-asian.html">Asian</a>
+          <a href="./best-bbq.html">BBQ</a>
+          <a href="./best-italian.html">Italian</a>
+          <a href="./best-breakfast.html">Breakfast</a>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Flower Mound Food. All rights reserved.</p>
+          <p>Want to advertise? <a href="mailto:flowermoundfood@gmail.com?subject=Advertising%20Inquiry%20-%20Flower%20Mound%20Food">Contact us</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./events.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+/* ============================================
+   FLOWER MOUND FOOD — LANDING PAGES STYLESHEET
+   Town + Cuisine SEO pages
+   Dark theme matching main site (style.css)
+   ============================================ */
+
+/* --- LANDING MAIN --- */
+.landing-main {
+  padding-top: calc(var(--nav-height) + 40px);
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+/* --- LANDING HERO --- */
+.landing-hero {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.landing-hero .section-tag {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  margin-bottom: 20px;
+}
+
+.landing-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.landing-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 12px;
+  line-height: 1.5;
+}
+
+.landing-count {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+/* --- INTRO PARAGRAPH --- */
+.landing-intro {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.landing-intro p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* --- CTA BUTTONS --- */
+.landing-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+/* --- RESTAURANT GRID --- */
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+/* --- RESTAURANT CARD --- */
+.landing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  transition: all 0.25s ease;
+}
+
+.landing-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(245, 158, 11, 0.15);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.card-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
+}
+
+.badge-category {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.badge-town {
+  background: rgba(16, 185, 129, 0.08);
+  color: #10B981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* --- CROSS-LINKS SECTION --- */
+.cross-links {
+  margin-bottom: 60px;
+}
+
+.cross-links h2 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.cross-links h2:first-child {
+  margin-top: 0;
+}
+
+.cross-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cross-link-pill {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--bg-glass-border);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cross-link-pill:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+/* --- BOTTOM CTA BOX --- */
+.landing-cta-box {
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245, 158, 11, 0.04) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.landing-cta-box h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.landing-cta-box p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.landing-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* --- BUTTON STYLES (for landing pages that import style.css) --- */
+/* These mirror the btn classes from style.css but are safe fallbacks */
+.landing-main .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.landing-main .btn-primary {
+  background: var(--accent);
+  color: #000;
+}
+
+.landing-main .btn-primary:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 0 24px var(--accent-glow);
+}
+
+.landing-main .btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.landing-main .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .landing-hero {
+    padding: 40px 0 24px;
+  }
+
+  .landing-title {
+    font-size: clamp(1.6rem, 7vw, 2.5rem);
+  }
+
+  .landing-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .landing-cta-box {
+    padding: 32px 20px;
+  }
+
+  .landing-cta-box h2 {
+    font-size: 1.25rem;
+  }
+
+  .landing-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cross-link-pill {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-main {
+    padding-top: calc(var(--nav-height) + 20px);
+    padding-bottom: 40px;
+  }
+
+  .landing-card {
+    padding: 16px 18px;
+  }
+}

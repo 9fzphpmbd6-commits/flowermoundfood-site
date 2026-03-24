@@ -659,6 +659,12 @@ button, select, input, textarea {
   color: var(--text-muted);
   font-weight: 500;
 }
+.directory-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+  font-weight: 400;
+}
 
 /* Directory Grid */
 .directory-grid {
@@ -1378,32 +1384,4 @@ button, select, input, textarea {
 .footer-towns a:hover,
 .footer-cuisines a:hover {
   color: var(--accent);
-}
-
-/* FEATURED BADGE IN DIRECTORY */
-.restaurant-card.featured-card {
-  border-color: var(--accent);
-  background: linear-gradient(180deg, rgba(245, 158, 11, 0.04) 0%, var(--bg-card) 40%);
-}
-.featured-tag {
-  display: inline-block;
-  padding: 2px 8px;
-  font-size: 0.6rem;
-  font-weight: 700;
-  font-family: var(--font-display);
-  letter-spacing: 0.05em;
-  color: var(--bg-primary);
-  background: var(--accent);
-  border-radius: var(--radius-full);
-  text-transform: uppercase;
-  margin-left: 8px;
-  vertical-align: middle;
-}
-
-/* 2-col pricing responsive */
-@media (max-width: 600px) {
-  .pricing-grid {
-    grid-template-columns: 1fr !important;
-    max-width: 400px !important;
-  }
 }
