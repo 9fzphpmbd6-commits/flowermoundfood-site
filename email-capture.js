@@ -4,7 +4,7 @@
  * 
  * SETUP: Replace the URL below with your Google Apps Script deployment URL.
  */
-const EMAIL_SCRIPT_URL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
+const EMAIL_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz1xZ4ZAVr9NpjW8obHMQJGBsGled5iVyuUdvkNm8rP40CGyuUNLW1dTkqYeVTM1hgB4Q/exec';
 
 // ─── HELPERS ────────────────────────────────
 function isValidEmail(email) {
