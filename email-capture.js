@@ -4,7 +4,7 @@
  * 
  * SETUP: Replace the URL below with your Google Apps Script deployment URL.
  */
-const EMAIL_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz1xZ4ZAVr9NpjW8obHMQJGBsGled5iVyuUdvkNm8rP40CGyuUNLW1dTkqYeVTM1hgB4Q/exec';
+const EMAIL_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbznoUBH5k8Q39VpfeqZsXjh4NpkTe63DwxokL6e6RgJ8AFJvQcV1E4FyD5trNjmVK9r/exec';
 
 // ─── HELPERS ────────────────────────────────
 function isValidEmail(email) {
@@ -33,14 +33,10 @@ async function submitEmail(email, source) {
     return { result: 'error', message: 'Not configured' };
   }
   try {
-    const resp = await fetch(EMAIL_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, source })
-    });
-    // no-cors means we can't read the response, so assume success
-    return { result: 'success' };
+    const url = EMAIL_SCRIPT_URL + '?email=' + encodeURIComponent(email) + '&source=' + encodeURIComponent(source);
+    const resp = await fetch(url);
+    const data = await resp.json();
+    return data;
   } catch (err) {
     console.error('Email submit error:', err);
     return { result: 'error', message: err.toString() };
