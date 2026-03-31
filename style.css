@@ -175,6 +175,17 @@ button, select, input, textarea {
   background: rgba(255,255,255,0.06);
 }
 .nav-link.active { color: var(--accent); }
+.nav-email-btn {
+  background: var(--accent);
+  color: #0C0C0E !important;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+}
+.nav-email-btn:hover {
+  background: var(--accent-hover);
+  color: #0C0C0E !important;
+}
 
 /* Mobile Toggle */
 .nav-toggle {
