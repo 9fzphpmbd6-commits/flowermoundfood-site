@@ -2,78 +2,78 @@
  * FEATURED EVENTS — Update this file weekly with real local events.
  * The homepage "This Week's Featured Events" section reads from this array.
  * 
- * Last updated: March 30, 2026
- * Week of: March 30 – April 5, 2026
+ * Last updated: April 6, 2026
+ * Week of: April 6 – April 12, 2026
  */
 const FEATURED_EVENTS = [
   {
-    date: "MAR 31",
+    date: "APR 7",
     weekday: "Tue",
     restaurant: "Guitars & Growlers",
     title: "Music Bingo Night",
-    desc: "Every Tuesday at G&G Flower Mound. Listen to the hits, mark your card, and win prizes. Craft beers and good vibes. Free to play.",
+    desc: "Four rounds of name-that-tune bingo with prizes. Play with two cards per round, spanning hits across decades. Free to play.",
     town: "Flower Mound",
     time: "7:00 PM",
     link: "https://guitarsandgrowlers.com/events-flower-mound"
   },
   {
-    date: "APR 1",
+    date: "APR 8",
     weekday: "Wed",
     restaurant: "Guitars & Growlers",
     title: "Trivia Night",
-    desc: "Wednesday live trivia showdown. Bring your crew, flex your brainpower, and compete for bragging rights. Free to play.",
+    desc: "Wednesday live trivia showdown. Teams up to 6, one device per team. Free to play, first-come first-served seating.",
     town: "Flower Mound",
     time: "7:00 PM",
     link: "https://guitarsandgrowlers.com/events-flower-mound"
   },
   {
-    date: "APR 2",
+    date: "APR 9",
     weekday: "Thu",
     restaurant: "Marty B's",
-    title: "Ashmore -- Live Rock",
-    desc: "High-energy rock on the main stage at Marty B's. Great food, cold drinks, and a packed house every Thursday.",
+    title: "HonorFest -- Jack Ingram, Mike Ryan & Extended Play",
+    desc: "Inaugural benefit concert for The Honor Foundation celebrating Special Operations Forces. Live music from Jack Ingram, Mike Ryan, and Extended Play Band. Ticketed event.",
     town: "Bartonville",
     time: "6:00 PM",
     link: "https://www.martybsplace.com/music"
   },
   {
-    date: "APR 3",
-    weekday: "Fri",
-    restaurant: "Marty B's",
-    title: "Midtown 10 -- Live Music",
-    desc: "Friday night live music from Midtown 10. Kick off the weekend with great sound and Southern-inspired bites.",
-    town: "Bartonville",
-    time: "7:00 PM",
-    link: "https://www.martybsplace.com/music"
-  },
-  {
-    date: "APR 4",
-    weekday: "Sat",
-    restaurant: "Marty B's",
-    title: "Big City Outlaws -- Live Music",
-    desc: "Country and rock covers all night long. One of the most popular acts at Marty B's. Saturday night done right.",
-    town: "Bartonville",
-    time: "7:00 PM",
-    link: "https://www.martybsplace.com/music"
-  },
-  {
-    date: "APR 4",
-    weekday: "Sat",
-    restaurant: "Shoal Creek Tavern",
-    title: "Saturday Brunch",
-    desc: "Weekend brunch from 10:30 AM to 2 PM. $10 bottled mimosas, Bloody Marys, and the full brunch cocktail menu.",
-    town: "Highland Village",
-    time: "10:30 AM",
-    link: "https://shoalcreektavern.com"
-  },
-  {
-    date: "APR 2",
+    date: "APR 9",
     weekday: "Thu",
     restaurant: "Guitars & Growlers",
-    title: "Poker Night",
-    desc: "Free poker every Thursday at G&G Flower Mound. Cold beer, friendly competition, and a laid-back atmosphere.",
+    title: "Poker Night -- $150 Freeroll",
+    desc: "Free No Limit Texas Hold'em with AHL Poker. No buy-in, $150 cash prize. Bring a buddy for bonus chips. 1-hour late entry grace period.",
     town: "Flower Mound",
     time: "7:00 PM",
+    link: "https://guitarsandgrowlers.com/events-flower-mound"
+  },
+  {
+    date: "APR 10",
+    weekday: "Fri",
+    restaurant: "Marty B's",
+    title: "Downtown Fever -- Live Music",
+    desc: "High-energy party band covering Frank Sinatra to today's hits. Multiple lead vocalists, choreography, and a packed dance floor all night.",
+    town: "Bartonville",
+    time: "7:00 PM",
+    link: "https://www.martybsplace.com/music"
+  },
+  {
+    date: "APR 11",
+    weekday: "Sat",
+    restaurant: "Marty B's",
+    title: "Totally 80's -- Live Music",
+    desc: "All the best 80s hits live on the main stage. Big hair energy, neon vibes, and a Saturday night to remember.",
+    town: "Bartonville",
+    time: "7:00 PM",
+    link: "https://www.martybsplace.com/music"
+  },
+  {
+    date: "APR 11",
+    weekday: "Sat",
+    restaurant: "Guitars & Growlers",
+    title: "Saturday Poker -- $150 Freeroll",
+    desc: "Free Saturday afternoon poker at G&G Flower Mound. No buy-ins, open to all, 90-minute grace period. Play for $150.",
+    town: "Flower Mound",
+    time: "3:00 PM",
     link: "https://guitarsandgrowlers.com/events-flower-mound"
   }
 ];
@@ -84,5 +84,6 @@ const WEEKLY_SPECIALS = [
   { day: "Tuesday", restaurant: "Guitars & Growlers", deal: "Music Bingo Night -- 7PM-9PM, free to play", town: "Flower Mound" },
   { day: "Wednesday", restaurant: "Shoal Creek Tavern", deal: "Wine Down Wednesday -- 50% off wine by the glass", town: "Highland Village" },
   { day: "Thursday", restaurant: "Shoal Creek Tavern", deal: "50% off craft cocktails all day", town: "Highland Village" },
-  { day: "Thursday", restaurant: "Guitars & Growlers", deal: "Poker Night -- 7PM-10PM, free to play", town: "Flower Mound" }
+  { day: "Thursday", restaurant: "Guitars & Growlers", deal: "Poker Night -- 7PM-10PM, free to play, $150 cash prize", town: "Flower Mound" },
+  { day: "Saturday", restaurant: "Guitars & Growlers", deal: "Saturday Poker Freeroll -- 3PM-6PM, $150 prize", town: "Flower Mound" }
 ];
